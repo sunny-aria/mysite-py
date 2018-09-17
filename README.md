@@ -3,13 +3,12 @@ django 日常笔记，练习
 # django-admin startproject py_mysit 创建py_site 项目
 # python manage.py runserver 运行项目
 # pip install mysqlclient==1.3.10 按照mysqldb，支持py3.3+
-## python manage.py syncdb 创建数据库的表
+ 
 
 ## python manage.py startapp polls 创建一个polls 应用
 项目中可以包含多个应用
 
 ##生成数据sql 步骤
-> python manage.py migrate #创建表结构
 
 > python manage.py makemigrations polls #用来检测数据库变更和生成数据库迁移文件
 
@@ -21,3 +20,5 @@ django 日常笔记，练习
 
 > python manage.py createsuperuser
 admin /django123
+
+> python manage.py shell 

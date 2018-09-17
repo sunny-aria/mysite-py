@@ -15,13 +15,15 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from polls.views import hello
+from polls.views import hello,poll_index,poll_edit
 from polls import search
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path(r'hello/',hello),
-    path(r'search-form/',search.search_form),
-    path(r'^search$',search.search),
-    path(r'^search-post/$',search.search_post),
+    path(r'hello/', hello),
+    path(r'search-form/', search.search_form),
+    path('search', search.search),
+    path('search-post', search.search_post),
+    path('poll-index', poll_index),
+    path(r'^poll-edit/', poll_edit, name='poll-edit'),
 ]
