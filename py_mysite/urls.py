@@ -15,7 +15,13 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from polls.views import hello
+from polls import search
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path(r'hello/',hello),
+    path(r'search-form/',search.search_form),
+    path(r'^search$',search.search),
+    path(r'^search-post/$',search.search_post),
 ]
