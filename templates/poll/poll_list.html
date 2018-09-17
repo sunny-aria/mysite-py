@@ -1,0 +1,6 @@
+{% extends "../base.html" %}
+{% block mainbody %}
+{% for poll in pollList %}
+<a href="" ><li>{{ poll.question}}</li></a>
+{% endfor%}
+{% endblock %}
