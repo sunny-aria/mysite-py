@@ -11,10 +11,9 @@ django 日常笔记，练习
 ##生成数据sql 步骤
 
 > python manage.py makemigrations polls #用来检测数据库变更和生成数据库迁移文件
+> python manage.py sqlmigrate polls 0001 # 可以查看把数据库迁移文件转换成数据库语言
+> python manage.py migrate polls #创建表结构 自动执行数据库迁移并同步管理你的数据库结构的命令migrate
 
-> python manage.py migrate polls #创建表结构
-
-> python manage.py sqlmigrate polls 0001 # 用来把数据库迁移文件转换成数据库语言
 
 > 生成的sql 可以放到数据库执行
 
